@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Heebo';
+    src: url('Heebo-Thin.eot');
+    src: url('Heebo-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Heebo-Thin.woff2') format('woff2'),
+        url('Heebo-Thin.woff') format('woff'),
+        url('Heebo-Thin.ttf') format('truetype'),
+        url('Heebo-Thin.svg#Heebo-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
