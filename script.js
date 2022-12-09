@@ -3,19 +3,19 @@
 let data = [
   {
     id: 1,
-    imageUrl: "../images/Rectangle.png",
+    imageUrl: "images/Rectangle.png",
     title:
       "''It's no secret that Bali is the perfect destination for water lovers - if you're one of them, then don't lose this ticket to get the best watersport package here in Bali''",
   },
   {
     id: 2,
-    imageUrl: "../images/Rectangle.png",
+    imageUrl: "images/Rectangle.png",
     title:
       "''Don't miss Balinese massage! It's a combination of gentle stretches, acupressure, reflexology, and aromatherapy to stimulate the flow of blood and bring a sense of wellbeing''",
   },
   {
     id: 3,
-    imageUrl: "../images/Rectangle.png",
+    imageUrl: "images/Rectangle.png",
     title:
       "''Traveling means something different for everyone, but one thing most people have in common is their love for trying new cuisine. Fortunately, if you’re planning on visiting Bali, there are plenty of eats and drinks that are worth the journey, wherever your tastes may lie.''",
   },
