@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="icon" href="images/MainIcon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Bali Buddies</title>
@@ -15,32 +15,37 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <div class="bg-image">
+            <div>
             <div class="nav-flex">
                 <a href="index.html"><img class="logo" src="images/logo-removebg-preview.png" alt="baliLogo"></a>
-                <nav class="nav">
+                <nav class="nav" id="navbar">
                     <ul class="nav-li">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">PACKAGE</a></li>
-                        <li><a href="#">TRIP</a></li>
-                        <li><a href="#">TESTIMONY</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#" class="white black">HOME</a></li>
+                        <li><a href="#" class="white black">ABOUT</a></li>
+                        <li><a href="#" class="white black">PACKAGE</a></li>
+                        <li><a href="#" class="white black">TRIP</a></li>
+                        <li><a href="#" class="white black">TESTIMONY</a></li>
+                        <li><a href="#" class="white black">BLOG</a></li>
+                        <li><a href="#" class="white black">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
 
-        <div class="burger-bar">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="title">
-            <h1>BALI BUDDIES </h1>
-            <h4>Your Insider's Guide To Bali</h4>
+            <div class="burger-bar" id="burgerBar">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+    
+            <h1 class="bali-buddies">BALI BUDDIES </h1>
+            <h4 class="guide">Your Insider's Guide To Bali</h4>
         </div>
     </header>
+    <!-- 1 section -->
     <section>
         <div class="section1">
             <div class="about">
@@ -54,21 +59,23 @@
 
                 </div>
                 <div class="right-section">
-                    <img class="photo" src="images/swing.jpg" alt="rice-terrace">
-                    <!-- <img class="photo2" src="images/me.jpg" alt="ubud"> -->
+                    <img class="photo" src="images/me.jpg" alt="ubud">
+
                 </div>
             </div>
         </div>
     </section>
+    <!-- 2 section -->
     <section>
         <div class="section2">
             <h4>Subsribe to our newsletter for deal & promo</h4>
             <div class="subscribe">
                 <input class="mail" type="text" placeholder="Your Email Address">
-                <label class="btn" for="click" id="click">SUBSCRIBE</label>
+                <button id="btnsubscribe">SUBSCRIBE</button>
             </div>
         </div>
     </section>
+    <!-- 3 section -->
     <section class="section3">
         <h2>OUR PACKAGE</h2>
         <p class="block1-p"> Explore our Holiday Package deals</p>
@@ -94,17 +101,18 @@
                     intimate haven to enjoy a luxurious massage, practice yoga or simply relax around the outdoor
                     swimming pool. </p>
             </div>
-
-
         </div>
     </section>
+    <!-- 4 section -->
     <section>
         <div class="bg-image1">
+            <div>
             <h2>FEATURED TRIP</h2>
             <p class="text-section4">OFFER ENDS IN 3 DAYS</p>
+        	 </div>
             <div class="hotel">
-                <div>
-                    <img class="img-hotel" src="images/hotel.jpg" alt="baliHotel">
+                <div class="img-hotel">
+                    <!-- <img class="img-hotel" src="images/hotel.jpg" alt="baliHotel"> -->
                 </div>
                 <div class="text-hotel">
                     <h3>Maca Villas</h3>
@@ -120,8 +128,9 @@
         <div class="more-destination">
             <p>VIEW MORE OFFERS</p>
         </div>
-    </section>
-
+    
+    </section>  
+    <!-- 5 section -->
     <section>
         <div class="slider-wraper">
             <i class="fa-solid fa-angles-right arrow arrow-left" id="arrow-left"></i>
@@ -130,13 +139,13 @@
             </div>
         </div>
     </section>
-
+    <!-- 6 section -->
     <section class="section6">
         <h2>BLOG</h2>
         <p class="blog-title">BALI LIFE - Island of Gods</p>
         <div class="blog">
             <div class="boxes">
-                <img class="section6-image" src="images/love.png" alt="eat-pray-love">
+                <img class="section6-image" src="images/Kuta-Beach1.jpg" alt="eat-pray-love">
                 <h4>Eat Pray Love in Bali</h4>
                 <p class="text-box">The spirituality that lies within Balinese culture is pretty much impossible to
                     ignore. From numerous local holidays to the meaningful practices of everyone who inhabits the
@@ -165,6 +174,7 @@
             <p>VIEW MORE STORIES</p>
         </div>
     </section>
+    <!-- footer -->
     <footer class="footer">
         <div class="box-container">
             <div class="box">
@@ -187,9 +197,9 @@
                 <h3>contact info</h3>
                 <a href="tel:+123-123-1234"> <i class="fas fa-phone"></i> +123-123-1234 </a>
                 <a href="tel:+123-123-1234"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-                <a href="mailto:someone@example.com"> <i class="fas fa-envelope"></i> BaliBuddies@gmail.com </a>
+                <a href="mailto:someone@example.com"> <i class="fas fa-envelope"></i> Bali@gmail.com </a>
                 <a href="https://goo.gl/maps/To6M8kaG3WaSL7kh9" target="_blank> <i class=" fas fa-map"></i> Bali,
-                    Indondesia - 30104 </a>
+                    Indonesia 30104 </a>
             </div>
 
             <div class="box">
