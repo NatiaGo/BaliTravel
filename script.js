@@ -122,3 +122,11 @@ setInterval(() => {
 }, 5000);
 
 slide();
+
+// chat
+// let btnsubscribe = document.getElementById("btnsubscribe");
+// btnsubscribe.addEventListener('click', function(){
+//     burgerbar.classList.toggle('activeBar');
+// })
+
+

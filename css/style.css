@@ -9,6 +9,8 @@ p,
 img {
   cursor: pointer;
 }
+
+/* header */
 .bg-image {
   background-image: url(../images/home-slide-1.jpg);
   background-size: cover;
@@ -67,7 +69,6 @@ img {
 .black {
   color: #000;
 }
-
 .bali-buddies {
   position: absolute;
   width: 100%;
@@ -193,6 +194,7 @@ img {
   border: 5px solid white;
   border-radius: 20px;
 }
+/*  */
 
 /* section2  */
 .section2 {
@@ -212,6 +214,30 @@ img {
 }
 .subscribe {
   text-align: center;
+}
+.mail::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Heebo";
+  padding-left: 25px;
+}
+.mail::-moz-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Heebo";
+  padding-left: 25px;
+}
+.mail:-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Heebo";
+  padding-left: 25px;
+}
+.mail::-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Heebo";
+  padding-left: 25px;
 }
 .mail::placeholder {
   color: #ffffff;
@@ -244,6 +270,7 @@ img {
   border: 2px solid white;
   cursor: pointer;
 }
+
 /* section 3 */
 .section3-blocks {
   max-width: 1160px;
@@ -297,6 +324,7 @@ img {
   width: 342px;
   height: 117px;
 }
+
 /* section 4 */
 .trip {
   font-family: "Heebo";
@@ -403,10 +431,12 @@ img {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
 /* section5 */
 .slide img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .arrow {
   width: 40px;
@@ -471,6 +501,7 @@ img {
   font-size: 25px;
   font-weight: 300;
 }
+
 /* section 6 */
 .blog {
   max-width: 1140px;
@@ -524,7 +555,6 @@ img {
   display: block;
   margin-top: 21px;
 }
-
 .text-box {
   font-size: 16px;
   font-weight: 400;
@@ -560,7 +590,6 @@ img {
   margin-left: 60px;
   margin-right: 60px;
 }
-
 .box h3 {
   color: #ee2655;
   font-size: 20px;
@@ -568,7 +597,6 @@ img {
   font-family: "Heebo";
   font-weight: 300;
 }
-
 .box a {
   color: #ffffff;
   font-size: 18px;
@@ -582,11 +610,9 @@ img {
   padding-right: 5px;
   transition: 0.2s linear;
 }
-
 .box a:hover i {
   padding-right: 20px;
 }
-
 .create {
   text-align: center;
   padding-top: 20px;
@@ -596,7 +622,6 @@ img {
   font-weight: 300;
   color: #ffffff;
 }
-
 .create span {
   color: #ee2655;
 }
@@ -737,7 +762,7 @@ img {
   }
 }
 @media (max-width: 600px) {
-  .trip{
+  .trip {
     font-size: 40px;
     font-weight: 200;
     text-align: center;
@@ -753,9 +778,9 @@ img {
   }
 }
 @media (max-width: 1037px) {
- .trip {
-  margin-top: 60px;
- }
+  .trip {
+    margin-top: 60px;
+  }
 }
 
 /* section slider */
@@ -799,6 +824,7 @@ img {
     z-index: 1500;
   }
 }
+
 /* section 6 */
 @media (max-width: 488px) {
   .section6-image {
@@ -848,9 +874,10 @@ img {
   .box {
     width: 250px;
     margin-bottom: 40px;
-    /* height: auto; */
   }
   .footer {
     padding: 20px;
   }
 }
+
+/* chat */

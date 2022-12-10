@@ -8,16 +8,14 @@
     <meta name="keywords" content="bali, blog, food, beaches, love, packages">
     <meta name="author" content="Natia Gotsiridze">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="googlebot" content="notranslate">
-
     <meta property="og:url" content="https://natiago.github.io/BaliTravel/" />
     <meta property="og:type" content="Website" />
     <meta property="og:title" content="Bali travel" />
     <meta property="og:description" content="Your Insider's Guide To Bali  " />
     <meta property="og:image" content="https://i.ytimg.com/vi/Vv2LM8gKDLQ/maxresdefault.jpg" />
 
-
+    <!-- styles icons fontawesome -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/fonts.css">
@@ -32,34 +30,34 @@
     <header>
         <div class="bg-image">
             <div>
-            <div class="nav-flex">
-                <a href="index.html"><img class="logo" src="images/logo-removebg-preview.png" alt="baliLogo"></a>
-                <nav class="nav" id="navbar">
-                    <ul class="nav-li">
-                        <li><a href="#" class="white black">HOME</a></li>
-                        <li><a href="#" class="white black">ABOUT</a></li>
-                        <li><a href="#" class="white black">PACKAGE</a></li>
-                        <li><a href="#" class="white black">TRIP</a></li>
-                        <li><a href="#" class="white black">TESTIMONY</a></li>
-                        <li><a href="#" class="white black">BLOG</a></li>
-                        <li><a href="#" class="white black">CONTACT</a></li>
-                    </ul>
-                </nav>
+                <div class="nav-flex">
+                    <a href="index.html"><img class="logo" src="images/logo-removebg-preview.png" alt="baliLogo"></a>
+                    <nav class="nav" id="navbar">
+                        <ul class="nav-li">
+                            <li><a href="#" class="white black">HOME</a></li>
+                            <li><a href="#about" class="white black">ABOUT</a></li>
+                            <li><a href="#package" class="white black">PACKAGE</a></li>
+                            <li><a href="#trip" class="white black">TRIP</a></li>
+                            <li><a href="#testimony" class="white black">TESTIMONY</a></li>
+                            <li><a href="#blog" class="white black">BLOG</a></li>
+                            <li><a href="#contact" class="white black">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
 
             <div class="burger-bar" id="burgerBar">
                 <div class="line line1"></div>
                 <div class="line line2"></div>
                 <div class="line line3"></div>
             </div>
-    
+
             <h1 class="bali-buddies">BALI BUDDIES </h1>
             <h4 class="guide">Your Insider's Guide To Bali</h4>
         </div>
     </header>
     <!-- 1 section -->
-    <section>
+    <section id="about">
         <div class="section1">
             <div class="about">
                 <div class="left-section">
@@ -79,7 +77,7 @@
         </div>
     </section>
     <!-- 2 section -->
-    <section>
+    <section >
         <div class="section2">
             <h4>Subsribe to our newsletter for deal & promo</h4>
             <div class="subscribe">
@@ -89,7 +87,7 @@
         </div>
     </section>
     <!-- 3 section -->
-    <section class="section3">
+    <section class="section3" id="package">
         <h2>OUR PACKAGE</h2>
         <p class="block1-p"> Explore our Holiday Package deals</p>
         <div class="section3-blocks">
@@ -117,32 +115,32 @@
         </div>
     </section>
     <!-- 4 section -->
-    <section>
-            <h2 class="trip">FEATURED TRIP</h2>
-            <p class="text-section4">OFFER ENDS IN 3 DAYS</p>
-        
-            <div class="hotel">
-                <div class="img-hotel">
-                    <img class="img-hotel" src="images/hotel.jpg" alt="baliHotel">
-                </div>
-                <div class="text-hotel">
-                    <h3>Maca Villas</h3>
-                    <p class="text-luxury-bali">7 Days 6 Night</p>
-                    <p class="hotel-text">Boutique Bali Private Pool Villa Luxury with Massages, Nightly Cocktails &
-                        Daily Breakfast. Enjoy the serenity of Bali’s Umalas region from the tranquil Maca Villas & Spa
-                        Umalas. Conveniently located between happening Canggu and bustling Seminyak.</p>
+    <section id="trip">
+        <h2 class="trip">FEATURED TRIP</h2>
+        <p class="text-section4">OFFER ENDS IN 3 DAYS</p>
 
-                    <span>View Details</span>
-            
+        <div class="hotel">
+            <div class="img-hotel">
+                <img class="img-hotel" src="images/hotel.jpg" alt="baliHotel">
+            </div>
+            <div class="text-hotel">
+                <h3>Maca Villas</h3>
+                <p class="text-luxury-bali">7 Days 6 Night</p>
+                <p class="hotel-text">Boutique Bali Private Pool Villa Luxury with Massages, Nightly Cocktails &
+                    Daily Breakfast. Enjoy the serenity of Bali’s Umalas region from the tranquil Maca Villas & Spa
+                    Umalas. Conveniently located between happening Canggu and bustling Seminyak.</p>
+
+                <span>View Details</span>
+
             </div>
         </div>
         <div class="more-destination">
             <p>VIEW MORE OFFERS</p>
         </div>
-    
-    </section>  
+
+    </section>
     <!-- 5 section -->
-    <section>
+    <section id="testimony">
         <div class="slider-wraper">
             <i class="fa-solid fa-angles-right arrow arrow-left" id="arrow-left"></i>
             <i class="fa-solid fa-angles-left arrow arrow-right" id="arrow-right"></i>
@@ -151,7 +149,7 @@
         </div>
     </section>
     <!-- 6 section -->
-    <section class="section6">
+    <section class="section6" id="blog">
         <h2>BLOG</h2>
         <p class="blog-title">BALI LIFE - Island of Gods</p>
         <div class="blog">
@@ -186,7 +184,7 @@
         </div>
     </section>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="box-container">
             <div class="box">
                 <h3>quick links</h3>
