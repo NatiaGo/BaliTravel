@@ -667,10 +667,12 @@ img {
     margin-bottom: 30px;
   }
   .bali-buddies {
-    display: none;
+    font-size: 20px;
+    padding: 50px;
   }
   .guide {
-    display: none;
+    font-size: 20px;
+    padding: 50px;
   }
   .white {
     color: #ffffff;
