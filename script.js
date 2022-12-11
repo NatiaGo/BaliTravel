@@ -238,7 +238,7 @@ getUsers(currentPage);
 const navbar = document.querySelector("#nav-flex");
 
 window.onscroll = ()=> {
-  this.scrollY > 20 ? navbar.classList.add("scroll") : navbar.classList.remove("scroll");
+  this.scrollY > 700 ? navbar.classList.add("scroll") : navbar.classList.remove("scroll");
 }
 
 
