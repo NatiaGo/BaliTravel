@@ -1054,10 +1054,12 @@ textarea {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 280px;
+    margin-top: 251px;
     margin-bottom: 20px;
-    color: transparent;
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white; 
   }
   li {
     margin-bottom: 30px;
@@ -1071,8 +1073,10 @@ textarea {
     font-size: 20px;
     padding: 50px;
   }
-  .white {
-    color: #ffffff;
+}
+@media (max-width: 760px) {
+  .line {
+   width: 50%;
   }
 }
 
