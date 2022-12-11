@@ -1,21 +1,14 @@
-'use strict';
+"use strict";
 
-// burger bar
+// burger bar -home
 let navigation = document.getElementById("navbar");
 let burgerbar = document.getElementById("burgerBar");
-burgerbar.addEventListener('click', function(){
-    burgerbar.classList.toggle('activeBar');
-    navigation.classList.toggle('activeNav');
-})
+burgerbar.addEventListener("click", function () {
+  burgerbar.classList.toggle("activeBar");
+  navigation.classList.toggle("activeNav");
+});
 
-// scroll
-window.onscroll = () => {
-  const nav = document.querySelector('#nav-flex');
-  if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
-};
-
-
-// slider
+// slider -section 5
 let data = [
   {
     id: 1,
@@ -129,73 +122,119 @@ setInterval(() => {
 
 slide();
 
-// subscribe button
+// subscribe button - section 2
 let btnsubscribe = document.getElementById("btnsubscribe");
-btnsubscribe.addEventListener('click', function(){
-    btnsubscribe.innerHTML = 'Thank You!';
-})
+btnsubscribe.addEventListener("click", function () {
+  btnsubscribe.innerHTML = "Thank You!";
+});
 
-// form
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+// form -section 7
 
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    }
-    else {
-        document.documentElement.setAttribute('data-theme', 'light');
-    }    
-}
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+const contactForm = document.getElementById("contact-form");
+const errorElement = document.getElementById("error");
+const successMsg = document.getElementById("success-msg");
+const submitBtn = document.getElementById("submit");
 
-toggleSwitch.addEventListener('change', switchTheme, false);
-
-
-const name = document.getElementById('name');
-const email = document.getElementById('email');
-const message = document.getElementById('message');
-const contactForm = document.getElementById('contact-form');
-const errorElement = document.getElementById('error');
-const successMsg = document.getElementById('success-msg');
-const submitBtn = document.getElementById('submit');
-  
 const validate = (e) => {
   e.preventDefault();
- 
+
   if (name.value.length < 3) {
-    errorElement.innerHTML = 'Your name should be at least 3 characters long.';
+    errorElement.innerHTML = "Your name should be at least 3 characters long.";
     return false;
-  } 
-  
-  if (!(email.value.includes('.') && (email.value.includes('@')))) {
-    errorElement.innerHTML = 'Please enter a valid email address.';
+  }
+
+  if (!(email.value.includes(".") && email.value.includes("@"))) {
+    errorElement.innerHTML = "Please enter a valid email address.";
     return false;
-  } 
+  }
 
   if (!emailIsValid(email.value)) {
-    errorElement.innerHTML = 'Please enter a valid email address.';
+    errorElement.innerHTML = "Please enter a valid email address.";
     return false;
   }
 
   if (message.value.length < 15) {
-    errorElement.innerHTML = 'Please write a longer message.';
+    errorElement.innerHTML = "Please write a longer message.";
     return false;
   }
 
-  errorElement.innerHTML = '';
-  successMsg.innerHTML = 'Thank you! I will get back to you as soon as possible.'; 
+  errorElement.innerHTML = "";
+  successMsg.innerHTML =
+    "Thank you! I will get back to you as soon as possible.";
 
   e.preventDefault();
   setTimeout(function () {
-    successMsg.innerHTML = '';
-    document.getElementById('contact-form').reset();
+    successMsg.innerHTML = "";
+    document.getElementById("contact-form").reset();
   }, 6000);
 
   return true;
+};
 
-}
-
-const emailIsValid = email => {
+const emailIsValid = (email) => {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
+};
 
-submitBtn.addEventListener('click', validate);
+submitBtn.addEventListener("click", validate);
+
+// fetch- load more - section
+let currentPage = 1;
+let post = document.getElementById("main-wraper");
+
+function getUsers(page) {
+  fetch("https://reqres.in/api/users?page=" + page, {
+    METHOD: "GET",
+  })
+    .then(function (text) {
+      if (text.status !== 200) {
+        throw text.status;
+      }
+      return text.json();
+    })
+    .then(function (answer) {
+      answer.data.forEach((item) => {
+        let user = document.createElement("p");
+        user.classList.add("suname-name");
+        user.innerText = `${item.first_name} ${item.last_name}`;
+        let avatar = document.createElement("img");
+        avatar.src = item.avatar;
+        avatar.setAttribute("alrt", "avatar");
+        avatar.classList.add("avatar");
+        let nameAvatarWraper = document.createElement("div");
+        nameAvatarWraper.classList.add("avatarsclass");
+        let nameAvatar = document.createElement("div");
+        nameAvatar.appendChild(user);
+        nameAvatar.appendChild(avatar);
+        nameAvatarWraper.appendChild(nameAvatar);
+        post.appendChild(nameAvatarWraper);
+      });
+    })
+    // error
+    .catch(function (error) {
+      if (error == 404) {
+        let p = document.createElement("p");
+        p.textContent = "page not found";
+        p.classList.add("text-for");
+        post.appendChild(p);
+      }
+    });
+}
+// load more
+let loadMore = document.getElementById("more-destination");
+loadMore.addEventListener("click", function () {
+  currentPage++;
+  getUsers(currentPage);
+  loadMore.remove();
+});
+
+getUsers(currentPage);
+
+// scroll
+window.onscroll = () => {
+  const nav = document.querySelector("#nav-flex");
+  if (this.scrollY <= 100) nav.className = "";
+  else nav.className = "scroll";
+};
