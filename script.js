@@ -232,9 +232,13 @@ loadMore.addEventListener("click", function () {
 
 getUsers(currentPage);
 
+
 // scroll
-window.onscroll = () => {
-  const nav = document.querySelector("#nav-flex");
-  if (this.scrollY <= 100) nav.className = "";
-  else nav.className = "scroll";
-};
+
+const navbar = document.querySelector("#nav-flex");
+
+window.onscroll = ()=> {
+  this.scrollY > 20 ? navbar.classList.add("scroll") : navbar.classList.remove("scroll");
+}
+
+
