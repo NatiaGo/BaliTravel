@@ -53,7 +53,7 @@ img {
   z-index: 1000;
 }
 .scroll {
-  background-color: transparent;
+  background-color: aliceblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
