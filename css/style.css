@@ -1252,6 +1252,11 @@ textarea {
 }
 
 /* section 6 */
+@media (max-width : 387px){
+  .section6-image:hover{
+     pointer-events: none;
+  }
+}
 @media (max-width: 488px) {
   .section6-image {
     height: 320px;
