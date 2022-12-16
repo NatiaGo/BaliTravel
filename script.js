@@ -241,4 +241,7 @@ window.onscroll = ()=> {
   this.scrollY > 700 ? navbar.classList.add("scroll") : navbar.classList.remove("scroll");
 }
 
+// 
+
+
 
