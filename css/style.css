@@ -1254,8 +1254,14 @@ textarea {
 /* section 6 */
 @media (max-width : 387px){
   .section6-image:hover{
-     pointer-events: none;
-  }
+    /* none-მა არ იმუშავა რატომღაც*/
+    /* pointer-events: none; */
+    transform: scale(1.00);
+    -webkit-transform: scale(1.00);
+    -moz-transform: scale(1.00);
+    -ms-transform: scale(1.00);
+    -o-transform: scale(1.00);
+}
 }
 @media (max-width: 488px) {
   .section6-image {
